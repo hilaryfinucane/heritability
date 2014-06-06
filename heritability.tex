@@ -1,0 +1,126 @@
+%\pdfoutput 1 %pdf
+
+\documentclass[11pt]{article}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{verbatim}
+\usepackage{fullpage}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{prop}{Proposition}
+\newtheorem{cor}{Corollary}
+\newtheorem*{hyp}{Hypothesis}
+
+%\addtolength{\oddsidemargin}{-.5in}
+%\addtolength{\evensidemargin}{-.5in}
+%\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{1in}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\T}{\mathcal{T}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\h}{h^2}
+\newcommand{\H}{H^2}
+\newcommand{\c}{\chi^2}
+\newcommand{\bhat}{\hat{\beta}}
+\newcommand{\rhat}{\hat{r}}
+\newcommand{\lhat}{\hat{\ell}}
+\newcommand{\qt}{\varphi}
+\newcommand{\cc}{\psi}
+\newcommand{\liab}{\zeta}
+\newcommand{\eps}{\epsilon}
+%LD matrix = correlation matrix = L
+%LD covariance = covariance = D
+%GRM = A
+%quant phenotype = \qt
+%case-control phenotype = \cc
+%liability = \liab
+
+\def\diam{\mathop{\mathrm{diam}}}
+
+%\setlength\parindent{0pt}
+
+\title{Estimating heritability}
+\author{Brendan Bulik-Sullivan and Hilary Finucane}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introduction}
+
+%%%%%%%%%%%%PRELIMINARIES%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Preliminaries}
+\label{preliminaries}
+
+\section{Definitions of heritability}
+
+\section{Models of genetic architecture}
+
+\subsection{Twin Studies}
+% cite Zuk et al
+% standard assumption is no long-range GxG
+
+\subsection{All the SNPs}
+% beta non-random is intractable
+% seems more intellectually natural (though less mathematically convenient in 2010) to start with all the SNPs
+% relatedness causes non i.i.d. \eps
+% yang visscher: random beta (cite yang/visscher section/paper)
+% reasonable general model for beta
+
+\subsection{Yang/Visscher Genotyped SNPs}
+% innovations: unrelateds so \eps is reasonably i.i.d.
+% beta random to make this tractable
+
+\section{Relationship between heritability and genetic architecture}
+\subsection{Twin studies}
+%cite Zuk et al
+
+\subsection{Random effects, zero mean}
+
+\subsection{Non-zero mean}
+
+\subsection{LD dependence}
+
+\section{Estimators}
+
+\subsection{Twin Studies}
+
+\subsection{H-E Regression}
+
+\subsection{REML}
+
+\subsection{LD Score Regression}
+
+\subsection{Equivalences}
+
+\subsection{LD Score Regression with in-sample LD is an approximation algorithm for H-E Regression}
+
+\subsection{LD Score Regression with in-sample LD and LD pruned SNPs is an approximation algorithm for REML}
+
+\section{Sources of bias}
+% model mis-specification for 1000G doesn't always lead to model mis-specification for genotyped snps. simulations.
+
+\section{Extensions}
+
+\subsection{Partitioning heritability}
+
+\subsection{Genetic correlation}
+
+\section{Acknowledgements}
+
+
+\bibliographystyle{plain}
+\bibliography{ldscore}
+
+\end{document}
